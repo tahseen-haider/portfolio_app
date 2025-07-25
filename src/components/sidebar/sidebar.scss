@@ -1,19 +1,15 @@
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  color: black;
-  overflow: hidden;
-
+  z-index: 40;
   .bg{
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 400px;
+    width: 260px;
     background: white;
+    @media (min-width: $breakpoint-xl){
+      width: 400px;
+    }
 
     .links{
       position: absolute;
@@ -24,9 +20,13 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
-
+      color: black;
+      
       a{
-        font-size: 40px;
+        font-size: 26px;
+        @media (min-width: $breakpoint-xl){
+          font-size: 40px;
+        }
       }
     }
   }
@@ -39,10 +39,11 @@
     align-items: center;
     border-radius: 50%;
     position: fixed;
-    top: 25px;
-    left: 25px;
+    top: 7px;
+    left: 7px;
     background-color: transparent;
     border:none;
     cursor: pointer;
   }
 }
+

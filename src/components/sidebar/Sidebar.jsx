@@ -9,7 +9,10 @@ export default function Sidebar() {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
-    setMounted(true);
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 500);
+    return () => clearTimeout(timer);
   }, []);
 
   const variants = {
@@ -21,7 +24,7 @@ export default function Sidebar() {
       },
     },
     closed: {
-      clipPath: "circle(25px at 50px 50px)",
+      clipPath: "circle(24px at 32px 32px)",
       transition: {
         type: "spring",
         stiffness: 400,
@@ -29,16 +32,15 @@ export default function Sidebar() {
       },
     },
   };
+
+  if (!mounted) return;
+
   return (
     <motion.div animate={open ? "open" : "closed"} className="sidebar">
-      {mounted && (
-        <>
-          <motion.div variants={variants} className="bg">
-            <Links />
-          </motion.div>
-          <ToggleButton setOpen={setOpen} />
-        </>
-      )}
+      <motion.div variants={variants} className="bg">
+        <Links />
+      </motion.div>
+      <ToggleButton setOpen={setOpen} />
     </motion.div>
   );
 }
