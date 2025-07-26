@@ -28,6 +28,19 @@
         color: rebeccapurple;
         letter-spacing: 10px;
       }
+      h1 {
+
+      }
+      .buttons {
+        display: flex;
+        gap: 20px;
+
+        button {
+          padding: 8px;
+          border-radius: 10px;
+          border: none;
+        }
+      }
       img{
         width: 50px;
       }
