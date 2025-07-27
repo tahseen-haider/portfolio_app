@@ -14,7 +14,7 @@ export default function Hero() {
           <img src="/scroll.png" alt="image" />
         </div>
         <div className="imageContainer">
-          <img className="main-image" src="/hero2.jpg" alt="hero-image" />
+          <img className="main-image" src="/heroo.webp" alt="hero-image" />
           {/* <img className="sec-image" src="/hero.webp" alt="hero-image" /> */}
         </div>
       </div>

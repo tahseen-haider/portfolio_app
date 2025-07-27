@@ -29,7 +29,10 @@
         letter-spacing: 10px;
       }
       h1 {
-
+        font-size: 50px;
+        @media (min-width: $breakpoint-xl) {
+          font-size: 80px;
+        }
       }
       .buttons {
         display: flex;
