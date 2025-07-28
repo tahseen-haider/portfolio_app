@@ -19,6 +19,7 @@ const variants = {
     },
   },
 };
+
 export default function Services() {
   const ref = useRef()
   const isInView = useInView(ref, {margin: "-100px"})
