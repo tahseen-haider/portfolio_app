@@ -11,7 +11,7 @@ export default function Sidebar() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setMounted(true);
-    }, 500);
+    }, 50);
     return () => clearTimeout(timer);
   }, []);
 
@@ -33,11 +33,9 @@ export default function Sidebar() {
     },
   };
 
-  if (!mounted) return;
-
   return (
     <motion.div animate={open ? "open" : "closed"} className="sidebar">
-      <motion.div variants={variants} className="bg">
+      <motion.div style={{width: mounted?"400px":"0px"}} variants={variants} className="bg">
         <Links />
       </motion.div>
       <ToggleButton setOpen={setOpen} />

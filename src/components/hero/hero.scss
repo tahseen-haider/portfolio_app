@@ -23,7 +23,7 @@
       justify-content: center;
       gap: 40px;
 
-      h2{
+      h2 {
         font-size: 50px;
         color: rebeccapurple;
         letter-spacing: 10px;
@@ -31,21 +31,24 @@
       h1 {
         font-size: 50px;
         @media (min-width: $breakpoint-xl) {
-          font-size: 80px;
+          font-size: 60px;
         }
       }
       .buttons {
-        display: flex;
-        gap: 20px;
-
         button {
-          padding: 8px;
+          padding: 20px;
+          border: 1px solid white;
           border-radius: 10px;
-          border: none;
+          background-color: transparent;
+          color: white;
+          margin-right: 20px;
+          cursor: pointer;
+          font-weight: 300;
         }
       }
-      img{
+      img {
         width: 50px;
+        cursor: pointer;
       }
     }
   }
@@ -74,5 +77,15 @@
       right: 300px;
       height: 40%;
     }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 100%;
+    font-weight: bold;
   }
 }
