@@ -24,13 +24,47 @@
 
   .formContainer {
     flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .phoneSvg {
+      position: absolute;
+      margin: auto;
+      height: 100%;
+      z-index: -1;
+
+      svg {
+        display: flex;
+        justify-content: center;
+      }
+      path {
+        stroke: orange;
+        stroke-width: 0.2;
+        fill: none;
+      }
+    }
 
     form {
       display: flex;
       flex-direction: column;
+      flex: 1;
       gap: 20px;
 
-      input,textarea {
+      .loader {
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      input,
+      textarea {
         padding: 20px;
         background-color: transparent;
         border: 1px solid white;
