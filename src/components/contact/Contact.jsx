@@ -35,8 +35,10 @@ export default function Contact() {
         () => {
           setIsSending(false);
           console.log("SUCCESS!");
+          form.current.reset();
         },
         (error) => {
+          form.current.reset();
           setIsSending(false);
           console.log("FAILED...", error.text);
         }
@@ -110,7 +112,9 @@ export default function Contact() {
           <input type="text" required placeholder="Name" name="name" />
           <input type="email" required placeholder="Email" name="email" />
           <textarea rows={8} placeholder="Message" name="message" />
-          <button type="submit">{isSending ? <Loader2 className="loader"/> : "Submit"}</button>
+          <button type="submit">
+            {isSending ? <Loader2 className="loader" /> : "Submit"}
+          </button>
         </motion.form>
       </div>
     </motion.div>

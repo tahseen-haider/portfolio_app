@@ -1,5 +1,6 @@
 import "./app.scss";
 import Contact from "./components/contact/Contact.jsx";
+import Cursor from "./components/cursor/Cursor.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Parallax from "./components/parallax/Parallax.jsx";
@@ -9,6 +10,7 @@ import Services from "./components/services/Services.jsx";
 function App() {
   return (
     <div>
+      <Cursor/>
       <section id="Homepage">
         <Navbar />
         <Hero />

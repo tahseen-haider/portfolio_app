@@ -1,0 +1,20 @@
+.cursor {
+  position: fixed;
+  z-index: 90;
+}
+
+.cursorCircleBig{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  
+}
+.cursorCircleSmall{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
