@@ -20,12 +20,21 @@ const itemVariants = {
   open: { y: 0, opacity: 1 },
 };
 
-export default function Links() {
+export default function Links({ setOpen }) {
   const items = ["Homepage", "Services", "Portfolio", "Contact"];
   return (
     <motion.div variants={variants} className="links">
       {items.map((item) => (
-        <motion.a variants={itemVariants} whileHover={{scale:1.1}} whileTap={{scale:0.9}} href={`#${item}`} key={item}>
+        <motion.a
+          onClick={() => {
+            setOpen(false);
+          }}
+          variants={itemVariants}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          href={`#${item}`}
+          key={item}
+        >
           {item}
         </motion.a>
       ))}

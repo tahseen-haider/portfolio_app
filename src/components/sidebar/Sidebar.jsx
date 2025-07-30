@@ -48,7 +48,7 @@ export default function Sidebar() {
         variants={variants}
         className="bg"
       >
-        <Links />
+        <Links setOpen={setOpen}/>
       </motion.div>
       <ToggleButton setOpen={setOpen} />
     </motion.div>

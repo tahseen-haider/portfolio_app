@@ -2,8 +2,8 @@
 
 import { useCallback, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useState } from "react";
+import { loadFull } from "tsparticles";
 
 export default function ParticlesContainer() {
   const [init, setInit] = useState(false);
@@ -23,7 +23,7 @@ export default function ParticlesContainer() {
   }, []);
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
+      await loadFull(engine);
     }).then(() => {
       setInit(true);
     });
@@ -39,7 +39,7 @@ export default function ParticlesContainer() {
       interactivity: {
         events: {
           onClick: {
-            enable: false,
+            enable: true,
             mode: "push",
           },
           onHover: {
@@ -50,7 +50,21 @@ export default function ParticlesContainer() {
         },
         modes: {
           push: {
-            quantity: 90,
+            quantity: 1,
+            particles: {
+              life: {
+                duration: {
+                  value: 2,
+                },
+                count: 1,
+              },
+              move: {
+                speed: 3,
+                outModes: {
+                  default: "destroy",
+                },
+              },
+            },
           },
           repulse: {
             distance: 100,
@@ -59,6 +73,9 @@ export default function ParticlesContainer() {
         },
       },
       particles: {
+        life: {
+          count: 0,
+        },
         color: {
           value: "#fff",
         },
@@ -131,11 +148,10 @@ export default function ParticlesContainer() {
         width: "100%",
         height: "100%",
         position: "absolute",
-        zIndex: 2
+        zIndex: 2,
       }}
     >
       <Particles
-      
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
