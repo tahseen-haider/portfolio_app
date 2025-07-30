@@ -35,7 +35,19 @@ export default function Sidebar() {
 
   return (
     <motion.div animate={open ? "open" : "closed"} className="sidebar">
-      <motion.div style={{width: mounted?"400px":"0px"}} variants={variants} className="bg">
+      {open && (
+        <div
+          className="backdrop"
+          onClick={() => {
+            setOpen(false);
+          }}
+        />
+      )}
+      <motion.div
+        style={{ width: mounted ? "400px" : "0px" }}
+        variants={variants}
+        className="bg"
+      >
         <Links />
       </motion.div>
       <ToggleButton setOpen={setOpen} />

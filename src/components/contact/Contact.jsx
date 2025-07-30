@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
 import { Loader2 } from "lucide-react";
+import SplitText from "../../styles/components/SplitText";
 const variants = {
   initial: {
     y: 500,
@@ -52,7 +53,9 @@ export default function Contact() {
       whileInView={"animate"}
     >
       <motion.div variants={variants} className="textContainer">
-        <motion.h1>Let's work together</motion.h1>
+        <motion.h1>
+          <SplitText>Let's work together</SplitText>
+        </motion.h1>
         <motion.div variants={variants} className="item">
           <h2>Mail</h2>
           <span>tahsin3194@gmail.com</span>

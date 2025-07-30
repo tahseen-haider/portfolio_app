@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./parallax.scss";
 // eslint-disable-next-line no-unused-vars
 import { motion, useScroll, useTransform } from "framer-motion";
+import SplitText from "../../styles/components/SplitText";
 
 export default function Parallax({ type }) {
   const ref = useRef();
@@ -25,11 +26,22 @@ export default function Parallax({ type }) {
             : "linear-gradient(180deg, #111132, #505064",
       }}
     >
-      <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "What We Do?" : "What We Did?"}
+      <motion.h1 style={{ y: yText, zIndex: 90 }}>
+        {type === "services" ? (
+          <SplitText>What We Do?</SplitText>
+        ) : (
+          <SplitText>What We Did?</SplitText>
+        )}
       </motion.h1>
       <div className="mountains" />
-      <motion.div style={{ y: yBg, backgroundImage: type==="services"?"url(/planets.png)":"url(/sun.png)" }} className="planets" />
+      <motion.div
+        style={{
+          y: yBg,
+          backgroundImage:
+            type === "services" ? "url(/planets.png)" : "url(/sun.png)",
+        }}
+        className="planets"
+      />
       <motion.div style={{ x: yBg }} className="stars" />
     </div>
   );

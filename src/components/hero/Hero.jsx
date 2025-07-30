@@ -2,6 +2,7 @@ import "./hero.scss";
 
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import SplitText from "../../styles/components/SplitText";
 
 const textVariants = {
   initial: {
@@ -42,6 +43,7 @@ const sliderVariants = {
   },
 };
 
+
 export default function Hero() {
   return (
     <div className="hero">
@@ -52,9 +54,13 @@ export default function Hero() {
           animate="animate"
           className="textContainer"
         >
-          <motion.h2 variants={textVariants}>TAHSEEN HAIDER</motion.h2>
+          <motion.h2 variants={textVariants}>
+            <div>
+              <SplitText>TAHSEEN HAIDER</SplitText>
+            </div>
+          </motion.h2>
           <motion.h1 variants={textVariants}>
-            Web developer and UI designer
+            <SplitText>Web developer and UI designer</SplitText>
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>

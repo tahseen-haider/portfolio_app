@@ -24,7 +24,8 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
-
+      user-select: none;
+      
       @include mobile {
         height: 50%;
         width: 100%;
@@ -36,6 +37,7 @@
         font-size: 50px;
         color: rebeccapurple;
         letter-spacing: 10px;
+        display: flex;
         @include mobile {
           font-size: 24px;
         }
@@ -49,13 +51,17 @@
       .buttons {
         button {
           padding: 20px;
-          border: 1px solid white;
+          border: 2px solid white;
           border-radius: 10px;
           background-color: transparent;
           color: white;
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300;
+          &:hover {
+            background-color: rebeccapurple;
+            border: 2px solid transparent;
+          }
         }
       }
       img {
@@ -74,6 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 
     @include mobile {
       height: 50%;
@@ -87,6 +94,7 @@
       right: 0;
       height: 100%;
       object-fit: cover;
+      pointer-events: none;
     }
 
     .main-image {
