@@ -1,6 +1,7 @@
 .cursor {
   position: fixed;
   z-index: 90;
+  pointer-events: none;
   @include mobile {
     display: none;
   }

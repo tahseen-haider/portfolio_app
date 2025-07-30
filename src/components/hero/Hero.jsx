@@ -43,7 +43,6 @@ const sliderVariants = {
   },
 };
 
-
 export default function Hero() {
   return (
     <div className="hero">
@@ -54,19 +53,21 @@ export default function Hero() {
           animate="animate"
           className="textContainer"
         >
-          <motion.h2 variants={textVariants}>
-            <div>
-              <SplitText>TAHSEEN HAIDER</SplitText>
-            </div>
-          </motion.h2>
-          <motion.h1 variants={textVariants}>
-            <SplitText>Web developer and UI designer</SplitText>
-          </motion.h1>
+          <div className="name">
+            <motion.h2 variants={textVariants}>
+              <div>
+                <SplitText>TAHSEEN HAIDER</SplitText>
+              </div>
+            </motion.h2>
+            <motion.h1 variants={textVariants}>
+              <SplitText>Web developer and UI designer</SplitText>
+            </motion.h1>
+          </div>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
+            <motion.a href="#Portfolio" variants={textVariants}>
               See my Latest Works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            </motion.a>
+            <motion.a href="#Contact" variants={textVariants}>Contact Me</motion.a>
           </motion.div>
           <motion.img
             onClick={() => {
