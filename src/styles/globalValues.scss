@@ -15,12 +15,12 @@ $breakpoint-xl: 1370px;
   }
 }
 @mixin laptop {
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-xl) {
     @content;
   }
 }
 @mixin desktop {
-  @media (max-width: $breakpoint-xl) {
+  @media (min-width: $breakpoint-xl) {
     @content;
   }
 }

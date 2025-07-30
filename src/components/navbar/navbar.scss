@@ -14,6 +14,9 @@
     @include mobile {
       justify-content: flex-end;
     }
+    @include laptop {
+      padding-left: 80px;
+    }
     span {
       font-weight: bold;
 
