@@ -19,7 +19,7 @@ function App() {
         <Parallax type="services" />
       </section>
       <section>
-        <Services />
+        {/* <Services /> */}
       </section>
       <section id="Portfolio">
         <Parallax type="portfolio" />

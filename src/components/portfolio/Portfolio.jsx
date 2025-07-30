@@ -7,19 +7,19 @@ const items = [
   {
     id: 1,
     title: "Project Title 1",
-    img: "https://blocks.astratic.com/img/general-img-landscape.png",
+    img: "/placeholder.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nostrum debitis ea harum, inventore quibusdam neque placeat veniam consequuntur? Ad, dolores excepturi sunt blanditiis beatae iusto nam? Hic, quae assumenda!",
   },
   {
     id: 2,
     title: "Project Title 2",
-    img: "https://blocks.astratic.com/img/general-img-landscape.png",
+    img: "/placeholder.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nostrum debitis ea harum, inventore quibusdam neque placeat veniam consequuntur? Ad, dolores excepturi sunt blanditiis beatae iusto nam? Hic, quae assumenda!",
   },
   {
     id: 3,
     title: "Project Title 3",
-    img: "https://blocks.astratic.com/img/general-img-landscape.png",
+    img: "/placeholder.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nostrum debitis ea harum, inventore quibusdam neque placeat veniam consequuntur? Ad, dolores excepturi sunt blanditiis beatae iusto nam? Hic, quae assumenda!",
   },
 ];

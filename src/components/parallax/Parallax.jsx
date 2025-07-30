@@ -20,6 +20,7 @@ export default function Parallax({ type }) {
       ref={ref}
       className="parallax"
       style={{
+        zIndex:2,
         background:
           type === "services"
             ? "linear-gradient(180deg, #111132, #0c0c1d"

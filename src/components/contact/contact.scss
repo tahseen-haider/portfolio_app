@@ -5,32 +5,33 @@
   display: flex;
   align-items: center;
   gap: 50px;
-
+  
   @include mobile {
     width: 100%;
     padding: 10px;
     flex-direction: column;
     gap: 40px;
   }
-
+  
   @include laptop {
     width: 100%;
     padding: 20px;
   }
-
+  
   .textContainer {
+    z-index: 2;
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 40px;
-
+    
     @include mobile {
       gap: 20px;
       text-align: center;
       align-items: center;
       margin-top: 70px;
     }
-
+    
     h1 {
       font-size: 100px;
       line-height: 88px;
@@ -38,13 +39,14 @@
         font-size: 36px;
       }
     }
-
+    
     span {
       font-weight: 300;
     }
   }
 
   .formContainer {
+    z-index: 2;
     flex: 1;
     position: relative;
     display: flex;
@@ -93,7 +95,7 @@
       input,
       textarea {
         padding: 20px;
-        background-color: transparent;
+        background-color: $base-color;
         border: 1px solid white;
         color: white;
         border-radius: 5px;
