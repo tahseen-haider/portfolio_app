@@ -31,7 +31,7 @@ const sliderVariants = {
     x: 0,
   },
   animate: {
-    x: "-260%",
+    x: "-100%",
     opacity: 1,
     transition: {
       duration: 20,

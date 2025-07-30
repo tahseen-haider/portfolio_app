@@ -11,8 +11,8 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "@/styles/variables.scss" as *;`,
-        includePaths: [path.resolve(__dirname, 'src')], // Allows @ to mean src/
+        additionalData: `@use "@/styles/globalValues.scss" as *;`,
+        includePaths: [path.resolve(__dirname, 'src')],
       },
     },
   },
