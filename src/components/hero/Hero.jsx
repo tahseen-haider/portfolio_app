@@ -3,6 +3,7 @@ import "./hero.scss";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import SplitText from "../../styles/components/SplitText";
+import ParticlesContainer from "../../styles/components/ParticlesContainer";
 
 const textVariants = {
   initial: {
@@ -46,6 +47,7 @@ const sliderVariants = {
 export default function Hero() {
   return (
     <div className="hero">
+      <ParticlesContainer />
       <div className="wrapper">
         <motion.div
           variants={textVariants}
@@ -67,7 +69,9 @@ export default function Hero() {
             <motion.a href="#Portfolio" variants={textVariants}>
               See my Latest Works
             </motion.a>
-            <motion.a href="#Contact" variants={textVariants}>Contact Me</motion.a>
+            <motion.a href="#Contact" variants={textVariants}>
+              Contact Me
+            </motion.a>
           </motion.div>
           <motion.img
             onClick={() => {

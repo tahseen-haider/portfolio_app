@@ -3,8 +3,8 @@
   overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
+  width: 100%;
 
-  
   @include mobile {
     padding: 10px;
   }
@@ -68,6 +68,13 @@
         }
       }
       .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        @include mobile {
+          
+        }
+        
         a {
           padding: 20px;
           border: 2px solid white;
@@ -81,6 +88,10 @@
           &:hover {
             background-color: rgb(102, 51, 153);
             border: 2px solid transparent;
+          }
+
+          @include mobile {
+            padding: 8px;
           }
         }
       }
