@@ -2,6 +2,7 @@
   height: 65px;
   display: flex;
   align-items: center;
+  z-index: 99;
   .wrapper {
     max-width: 1366px;
     width: 100%;
@@ -28,6 +29,7 @@
     .social{
       display: flex;
       gap: 20px;
+      z-index: 4;
 
       img{
         width: 18px;
