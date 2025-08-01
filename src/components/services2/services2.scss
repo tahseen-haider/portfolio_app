@@ -65,6 +65,8 @@
           align-items: center;
           justify-content: center;
           gap: 8px;
+          user-select: none;
+          transition: all 0.1s ease;
 
           &:hover {
             border-color: orange;
@@ -73,6 +75,8 @@
             svg {
               fill: orange;
               color: orange;
+              rotate: 10deg;
+              scale: 1.1;
             }
           }
 
@@ -81,6 +85,7 @@
             height: 40px;
             fill: white;
             color: white;
+            transition: all 0.1s ease;
           }
         }
       }

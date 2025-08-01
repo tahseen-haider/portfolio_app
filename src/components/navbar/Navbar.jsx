@@ -27,7 +27,7 @@ export default function Navbar() {
           </div>
           <div className="social">
             <a href="https://github.com/tahseen-haider" target="_blank">
-              <GithubIcon />
+             <img src="/github.jpg" alt="github-link" />
             </a>
             <a
               href="https://www.facebook.com/people/Tahseen-Haider/pfbid06dGfVscMm12bERh5ojavyAqUj398hzmYSeSEorkSnApiBxy5Va3FGim5H1VbFzsAl/"

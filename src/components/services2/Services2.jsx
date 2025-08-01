@@ -112,6 +112,8 @@ export default function Services2() {
         </h1>
       </div>
       <div className="skills">
+        <div className="about">Something...</div>
+        <div className="separator" />
         <div className="tech">
           <h2>Uses</h2>
           <div className="techContainer">
@@ -122,8 +124,6 @@ export default function Services2() {
             ))}
           </div>
         </div>
-        <div className="separator" />
-        <div className="about">Something...</div>
       </div>
     </motion.div>
   );
