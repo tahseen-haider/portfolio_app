@@ -32,10 +32,10 @@ const Single = ({ item }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
   return (
-    <section>
+    <section className="eachProject">
       <div className="container">
         <div className="wrapper">
-          <div className="imageContainer"  ref={ref}>
+          <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="portfolio-image" />
           </div>
           <motion.div className="textContainer" style={{ y }}>
@@ -62,9 +62,11 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" ref={ref}>
-      <div className="progress">
-        <h1>Featured Works</h1>
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+      <div className="progressWrapper">
+        <div className="progress">
+          <h1>Featured Works</h1>
+          <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+        </div>
       </div>
       {items.map((item) => (
         <Single item={item} key={item.id} />

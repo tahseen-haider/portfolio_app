@@ -1,34 +1,5 @@
 .services {
   overflow: hidden;
-  z-index: 99;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  gap: 1rem;
+  background: linear-gradient(180deg, #111132, #0c0c1d);
   height: 100vh;
-  padding-bottom: 20px;
-  .item {
-    height: 100%;
-  }
-
-  .skills {
-    grid-column: span 1;
-    border-right: 1px solid;
-    border-color: gray;
-    @include mobile {
-      grid-column: span 2;
-    }
-  }
-
-  .softwares {
-    grid-column: span 1;
-    @include mobile {
-      grid-column: span 2;
-    }
-  }
-
-  .about {
-    grid-column: span 2;
-  }
 }

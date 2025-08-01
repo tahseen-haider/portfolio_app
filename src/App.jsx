@@ -10,21 +10,18 @@ import Services from "./components/services/Services.jsx";
 function App() {
   return (
     <div>
-      <Cursor/>
+      <Cursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
       </section>
-      {/* <section id="Services">
-        <Parallax type="services" />
-      </section> */}
-      <section>
+      <section id="Services">
         <Services />
       </section>
-      {/* <section id="Portfolio">
-        <Parallax type="portfolio" />
-      </section> */}
-      <Portfolio />
+      <section id="Portfolio">
+        <Portfolio />
+      </section>
+      <div style={{ height: "40px" }} />
       <section id="Contact">
         <Contact />
       </section>

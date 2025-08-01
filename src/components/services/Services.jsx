@@ -32,12 +32,6 @@ export default function Services() {
       ref={ref}
       animate={isInView && "animate"}
     >
-      {/* About Section */}
-      <div className="about item">3</div>
-      {/* Tech Section */}
-      <div className="skills item">1</div>
-      {/* Software Section */}
-      <div className="softwares item">2</div>
     </motion.div>
   );
 }

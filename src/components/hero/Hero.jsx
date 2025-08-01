@@ -115,7 +115,7 @@ export default function Hero() {
               </div>
             </motion.h2>
             <motion.h1 variants={textVariants}>
-              <SplitText>Web developer and UI designer</SplitText>
+              <SplitText>Full Stack Web developer & UI designer</SplitText>
             </motion.h1>
           </div>
           <motion.div variants={textVariants} className="buttons">
