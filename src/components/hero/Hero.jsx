@@ -144,8 +144,8 @@ export default function Hero() {
           initial="initial"
           className="slidingTextContainer"
         >
-          {techStack.map((ele) => (
-            <div>
+          {techStack.map((ele, i) => (
+            <div key={i}>
               <span>{ele.icon}</span>
               <span>{ele.title}</span>
             </div>

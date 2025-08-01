@@ -4,20 +4,26 @@ import Cursor from "./components/cursor/Cursor.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Portfolio from "./components/portfolio/Portfolio.jsx";
-import Services from "./components/services/Services.jsx";
+import Services1 from "./components/services1/Services1.jsx";
+import Services2 from "./components/services2/Services2.jsx";
+import ToTopBtn from "./components/toTopBtn/ToTopBtn.jsx";
 
 function App() {
   return (
     <div>
       <Cursor />
+      <ToTopBtn/>
       <section id="Homepage">
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
-        <Services />
+      <section id="Skills">
+        <Services1 />
       </section>
-      <section id="Portfolio">
+      <section>
+        <Services2 />
+      </section>
+      <section id="Projects">
         <Portfolio />
       </section>
       <div style={{ height: "40px" }} />

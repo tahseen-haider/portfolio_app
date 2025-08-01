@@ -4,6 +4,7 @@
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
   width: 100%;
+  z-index: 0;
 
   @include mobile {
     padding: 10px;

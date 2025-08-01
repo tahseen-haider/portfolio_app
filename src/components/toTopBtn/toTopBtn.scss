@@ -1,0 +1,33 @@
+.toTopBtn {
+  z-index: 2;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  font-weight: bold;
+
+  
+  &.show {
+    opacity: 0.6;
+    pointer-events: auto;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    background-color: white;
+    opacity: 1;
+  }
+}

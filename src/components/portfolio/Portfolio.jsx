@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./portfolio.scss";
 // eslint-disable-next-line no-unused-vars
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import SplitText from "../../styles/components/SplitText";
 
 const items = [
   {
@@ -64,7 +65,7 @@ export default function Portfolio() {
     <div className="portfolio" ref={ref}>
       <div className="progressWrapper">
         <div className="progress">
-          <h1>Featured Works</h1>
+          <h1><SplitText>Featured Works</SplitText></h1>
           <motion.div style={{ scaleX }} className="progressBar"></motion.div>
         </div>
       </div>
