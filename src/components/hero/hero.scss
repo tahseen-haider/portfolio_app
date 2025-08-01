@@ -39,16 +39,18 @@
         gap: 20px;
         align-items: center;
         text-align: center;
+        padding: 0;
       }
       .name {
         display: flex;
         flex-direction: column;
         align-items: start;
         text-align: start;
-
         @include mobile {
+          width: 100%;
           align-items: center;
           text-align: center;
+          gap: 40px;
         }
         h2 {
           font-size: 70px;
@@ -56,7 +58,7 @@
           letter-spacing: 10px;
           display: flex;
           @include mobile {
-            font-size: 24px;
+            font-size: 60px;
           }
         }
         h1 {
@@ -72,14 +74,13 @@
         align-items: center;
         justify-content: start;
         @include mobile {
-          
         }
-        
+
         a {
           padding: 20px;
           border: 2px solid white;
           border-radius: 10px;
-          background-color: transparent;
+          background-color: $base-color;
           color: white;
           margin-right: 20px;
           cursor: pointer;
@@ -145,17 +146,39 @@
 
   .slidingTextContainer {
     position: absolute;
-    font-size: 40vh;
-    bottom: -14vh;
+    font-size: 16vh;
+    bottom: 4vh;
     white-space: nowrap;
     color: #ffffff09;
-    width: 300vw;
+    width: 310vw;
     font-weight: bold;
     text-transform: uppercase;
+    display: flex;
+    gap: 8vh;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        display: flex;
+        align-items: center;
+      }
+      svg {
+        width: 16vh;
+        height: 16vh;
+        fill: #ffffff09 !important;
+        
+        
+        @include mobile {
+          width: 6vh;
+          height: 6vh;
+        }
+      }
+    }
     @include mobile {
-      width: 90vw;
-      font-size: 12vh;
-      bottom: 20vh;
+      width: 560vw;
+      font-size: 6vh;
+      bottom: 36vh;
     }
   }
 }

@@ -29,9 +29,9 @@ export default function Parallax({ type }) {
     >
       <motion.h1 style={{ y: yText, zIndex: 90 }}>
         {type === "services" ? (
-          <SplitText>What We Do?</SplitText>
+          <SplitText>What I Can Do?</SplitText>
         ) : (
-          <SplitText>What We Did?</SplitText>
+          <SplitText>What I Did?</SplitText>
         )}
       </motion.h1>
       <div className="mountains" />

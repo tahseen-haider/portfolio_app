@@ -4,6 +4,59 @@ import "./hero.scss";
 import { motion } from "framer-motion";
 import SplitText from "../../styles/components/SplitText";
 import ParticlesContainer from "../../styles/components/ParticlesContainer";
+import ReactIcon from "../icons/react";
+import HTMLIcon from "../icons/html";
+import CSSIcon from "../icons/css";
+import NextIcon from "../icons/next";
+import NodeIcon from "../icons/node";
+import ExpressIcon from "../icons/express";
+import JavascriptIcon from "../icons/javascript";
+import TypescriptIcon from "../icons/typescript";
+import TailwindIcon from "../icons/tailwind";
+import PrismaIcon from "../icons/prisma";
+
+const techStack = [
+  {
+    title: "HTML",
+    icon: <HTMLIcon/>,
+  },
+  {
+    title: "CSS",
+    icon: <CSSIcon/>,
+  },
+  {
+    title: "React",
+    icon: <ReactIcon/>,
+  },
+  {
+    title: "Next",
+    icon: <NextIcon/>,
+  },
+  {
+    title: "Node",
+    icon: <NodeIcon/>,
+  },
+  {
+    title: "Express",
+    icon: <ExpressIcon/>,
+  },
+  {
+    title: "Javascript",
+    icon: <JavascriptIcon/>,
+  },
+  {
+    title: "TypeScript",
+    icon: <TypescriptIcon/>,
+  },
+  {
+    title: "Tailwind",
+    icon: <TailwindIcon/>,
+  },
+  {
+    title: "Prisma",
+    icon: <PrismaIcon/>,
+  },
+];
 
 const textVariants = {
   initial: {
@@ -91,7 +144,12 @@ export default function Hero() {
           initial="initial"
           className="slidingTextContainer"
         >
-          NEXT.js MERN TYPESCRIPT React.js
+          {techStack.map((ele) => (
+            <div>
+              <span>{ele.icon}</span>
+              <span>{ele.title}</span>
+            </div>
+          ))}
         </motion.div>
         <div className="imageContainer">
           <motion.img

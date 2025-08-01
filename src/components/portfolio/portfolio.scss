@@ -1,20 +1,26 @@
 .portfolio {
   position: relative;
+
   .progress {
     position: sticky;
     top: 0;
     left: 0;
-    padding-top: 50px;
     text-align: center;
     color: orange;
     font-size: 36px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     @include laptop {
-      font-size: 28px;
+      font-size: 22px;
     }
     @include mobile {
-      padding-top: calc(100vh - 60px);
+      justify-content: end;
+      padding-bottom: 60px;
       font-size: 18px;
     }
+
     .progressBar {
       height: 10px;
       background-color: white;

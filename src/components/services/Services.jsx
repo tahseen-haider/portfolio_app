@@ -32,77 +32,12 @@ export default function Services() {
       ref={ref}
       animate={isInView && "animate"}
     >
-      <motion.div className="textContainer" variants={variants}>
-        <p>
-          I focus on helping your brand grow
-          <br /> and move forward
-        </p>
-        <hr />
-      </motion.div>
-      <motion.div className="titleContainer" variants={variants}>
-        <div className="title">
-          <img src="/people.webp" alt="people" />
-          <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
-          </h1>
-          <button>WHAT WE DO?</button>
-        </div>
-      </motion.div>
-
-      <motion.div className="listContainer" variants={variants}>
-        <motion.div
-          whileHover={{ background: "lightgray", color: "black" }}
-          className="box"
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            distinctio culpa, possimus consectetur ipsa reprehenderit dolorem
-            praesentium id ipsam nisi? Quos, quaerat! Reiciendis perferendis
-            ducimus vero est optio, odit earum!
-          </p>
-          <button>GO</button>
-        </motion.div>
-        <motion.div
-          whileHover={{ background: "lightgray", color: "black" }}
-          className="box"
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            distinctio culpa, possimus consectetur ipsa reprehenderit dolorem
-            praesentium id ipsam nisi? Quos, quaerat! Reiciendis perferendis
-            ducimus vero est optio, odit earum!
-          </p>
-          <button>GO</button>
-        </motion.div>
-        <motion.div
-          whileHover={{ background: "lightgray", color: "black" }}
-          className="box"
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            distinctio culpa, possimus consectetur ipsa reprehenderit dolorem
-            praesentium id ipsam nisi? Quos, quaerat! Reiciendis perferendis
-            ducimus vero est optio, odit earum!
-          </p>
-          <button>GO</button>
-        </motion.div>
-        <motion.div
-          whileHover={{ background: "lightgray", color: "black" }}
-          className="box"
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            distinctio culpa, possimus consectetur ipsa reprehenderit dolorem
-            praesentium id ipsam nisi? Quos, quaerat! Reiciendis perferendis
-            ducimus vero est optio, odit earum!
-          </p>
-          <button>GO</button>
-        </motion.div>
-      </motion.div>
+      {/* About Section */}
+      <div className="about item">3</div>
+      {/* Tech Section */}
+      <div className="skills item">1</div>
+      {/* Software Section */}
+      <div className="softwares item">2</div>
     </motion.div>
   );
 }
