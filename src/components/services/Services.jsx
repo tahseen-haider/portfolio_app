@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import "./services.scss";
 // eslint-disable-next-line no-unused-vars
 import { motion, useInView } from "framer-motion";
@@ -21,17 +20,10 @@ const variants = {
 };
 
 export default function Services() {
-  const ref = useRef()
-  const isInView = useInView(ref, {margin: "-100px"})
-
   return (
     <motion.div
       className="services"
       variants={variants}
-      initial="initial"
-      ref={ref}
-      animate={isInView && "animate"}
-    >
-    </motion.div>
+    ></motion.div>
   );
 }

@@ -24,7 +24,7 @@ export default function Sidebar() {
       },
     },
     closed: {
-      clipPath: "circle(24px at 32px 32px)",
+      clipPath: "circle(24px at 32px 42px)",
       transition: {
         type: "spring",
         stiffness: 400,

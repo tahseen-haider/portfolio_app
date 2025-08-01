@@ -4,7 +4,7 @@ import "./cursor.scss";
 import { motion } from "framer-motion";
 
 export default function Cursor() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ x: 0, y: 10 });
   useEffect(() => {
     const mouseMove = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });

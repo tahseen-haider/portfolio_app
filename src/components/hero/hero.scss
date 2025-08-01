@@ -39,7 +39,7 @@
         gap: 20px;
         align-items: center;
         text-align: center;
-        padding: 0;
+        padding: 50px 0px 0px 0px;
       }
       .name {
         display: flex;
@@ -50,7 +50,7 @@
           width: 100%;
           align-items: center;
           text-align: center;
-          gap: 40px;
+          gap: 10px;
         }
         h2 {
           font-size: 70px;
@@ -66,6 +66,7 @@
           font-size: 50px;
           @include mobile {
             font-size: 36px;
+            width: 100%;
           }
         }
       }
@@ -77,22 +78,24 @@
         }
 
         a {
-          padding: 20px;
+          padding: 10px 20px;
           border: 2px solid white;
           border-radius: 10px;
           background-color: $base-color;
           color: white;
           margin-right: 20px;
           cursor: pointer;
-          font-weight: 300;
+          font-weight: bold;
+          font-size: 24px;
           transition: all 0.5s ease;
           &:hover {
             background-color: rgb(102, 51, 153);
             border: 2px solid transparent;
           }
-
+          
           @include mobile {
-            padding: 8px;
+            padding: 8px 12px;
+            font-size:16px;
           }
         }
       }
