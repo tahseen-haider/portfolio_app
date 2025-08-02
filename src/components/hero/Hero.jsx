@@ -119,7 +119,7 @@ export default function Hero() {
             </motion.h1>
           </div>
           <motion.div variants={textVariants} className="buttons">
-            <motion.a href="#Portfolio" variants={textVariants}>
+            <motion.a href="#Projects" variants={textVariants}>
               See my Latest Works
             </motion.a>
             <motion.a href="#Contact" variants={textVariants}>

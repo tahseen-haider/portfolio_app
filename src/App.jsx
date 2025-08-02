@@ -4,8 +4,8 @@ import Cursor from "./components/cursor/Cursor.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Portfolio from "./components/portfolio/Portfolio.jsx";
-import Services1 from "./components/services1/Services1.jsx";
-import Services2 from "./components/services2/Services2.jsx";
+import Services1 from "./components/services/services1/Services1.jsx";
+import Services2 from "./components/services/services2/Services2.jsx";
 import ToTopBtn from "./components/toTopBtn/ToTopBtn.jsx";
 
 function App() {

@@ -1,23 +1,23 @@
-import SplitText from "../../styles/components/SplitText";
-import CSSIcon from "../icons/css";
-import ExpressIcon from "../icons/express";
-import HTMLIcon from "../icons/html";
-import JavascriptIcon from "../icons/javascript";
-import NextIcon from "../icons/next";
-import NodeIcon from "../icons/node";
-import PrismaIcon from "../icons/prisma";
-import ReactIcon from "../icons/react";
-import TailwindIcon from "../icons/tailwind";
-import Mongodb from "../icons/mongodb";
-import TypescriptIcon from "../icons/typescript";
-import MotionIcon from "../icons/motion";
-import MuiIcon from "../icons/mui";
-import SaasIcon from "../icons/sass";
-import ShadcnIcon from "../icons/shadcn";
-import "./services1.scss";
+import HTMLIcon from "../../icons/html.jsx";
+import CSSIcon from "../../icons/css.jsx";
+import ExpressIcon from "../../icons/express.jsx";
+import JavascriptIcon from "../../icons/javascript.jsx";
+import NextIcon from "../../icons/next.jsx";
+import NodeIcon from "../../icons/node.jsx";
+import PrismaIcon from "../../icons/prisma.jsx";
+import ReactIcon from "../../icons/react.jsx";
+import TailwindIcon from "../../icons/tailwind.jsx";
+import Mongodb from "../../icons/mongodb.jsx";
+import TypescriptIcon from "../../icons/typescript.jsx";
+import MotionIcon from "../../icons/motion.jsx";
+import MuiIcon from "../../icons/mui.jsx";
+import SaasIcon from "../../icons/sass.jsx";
+import ShadcnIcon from "../../icons/shadcn.jsx";
+import "../services.scss";
 // eslint-disable-next-line no-unused-vars
 import { motion, useInView } from "framer-motion";
-import ReduxIcon from "../icons/redux";
+import ReduxIcon from "../../icons/redux";
+import SplitText from "../../../styles/components/SplitText";
 
 const tech = [
   {
@@ -123,7 +123,25 @@ export default function Services1() {
           </div>
         </div>
         <div className="separator" />
-        <div className="about">Something...</div>
+        <div className="about">
+          {/* Text Section */}
+          <div className="head">
+            <div className="imageContainer">
+              <img src="/backend.webp" alt="" />
+            </div>
+            <h1>
+              <SplitText>Perfect SkillSet for Your </SplitText>
+              <strong>
+                <SplitText>Responsive Full-Stack Websites</SplitText>
+              </strong>
+            </h1>
+            <p>
+              I build modern, high-performance websites using Next.js, Redux,
+              and the MERN stack—delivering seamless frontend and powerful
+              backend solutions tailored to your needs.
+            </p>
+          </div>
+        </div>
       </div>
     </motion.div>
   );

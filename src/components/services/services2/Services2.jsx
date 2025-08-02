@@ -1,23 +1,23 @@
-import SplitText from "../../styles/components/SplitText";
-import "./services2.scss";
+import "../services.scss";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import ChromeIcon from "../icons/chrome";
-import VscodeIcon from "../icons/vscode";
-import FigmaIcon from "../icons/figma";
-import GithubIcon from "../icons/github";
-import PhotoshopIcon from "../icons/photoshop";
-import BlenderIcon from "../icons/blender";
-import PostmanIcon from "../icons/postman";
-import PinterestIcon from "../icons/pinterest";
-import LinkedinIcon from "../icons/linkedin";
-import GmailIcon from "../icons/gmail";
-import DriveIcon from "../icons/drive";
-import ChatgptIcon from "../icons/chatgpt";
-import WindowsIcon from "../icons/windows";
-import PowershellIcon from "../icons/powershell";
-import AndroidIcon from "../icons/android";
-import WinrarIcon from "../icons/winrar";
+import ChromeIcon from "../../icons/chrome";
+import VscodeIcon from "../../icons/vscode";
+import FigmaIcon from "../../icons/figma";
+import GithubIcon from "../../icons/github";
+import PhotoshopIcon from "../../icons/photoshop";
+import BlenderIcon from "../../icons/blender";
+import PostmanIcon from "../../icons/postman";
+import PinterestIcon from "../../icons/pinterest";
+import LinkedinIcon from "../../icons/linkedin";
+import GmailIcon from "../../icons/gmail";
+import DriveIcon from "../../icons/drive";
+import ChatgptIcon from "../../icons/chatgpt";
+import WindowsIcon from "../../icons/windows";
+import PowershellIcon from "../../icons/powershell";
+import AndroidIcon from "../../icons/android";
+import WinrarIcon from "../../icons/winrar";
+import SplitText from "../../../styles/components/SplitText";
 
 const apps = [
   {
@@ -112,7 +112,10 @@ export default function Services2() {
         </h1>
       </div>
       <div className="skills">
-        <div className="about">Something...</div>
+        <div className="about">
+          {/* Text Section */}
+          
+        </div>
         <div className="separator" />
         <div className="tech">
           <h2>Uses</h2>
