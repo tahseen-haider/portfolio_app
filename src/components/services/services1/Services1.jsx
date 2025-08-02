@@ -111,7 +111,7 @@ export default function Services1() {
           <SplitText>What I Bring to the Table</SplitText>
         </h1>
       </div>
-      <div className="skills">
+      <div className="container">
         <div className="tech">
           <h2>Tech Stack</h2>
           <div className="techContainer">
@@ -127,7 +127,7 @@ export default function Services1() {
           {/* Text Section */}
           <div className="head">
             <div className="imageContainer">
-              <img src="/backend.webp" alt="" />
+              <img src="/frontend.webp" alt="" />
             </div>
             <h1>
               <SplitText>Perfect SkillSet for Your </SplitText>

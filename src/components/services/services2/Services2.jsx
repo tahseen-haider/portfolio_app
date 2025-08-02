@@ -111,14 +111,31 @@ export default function Services2() {
           <SplitText>What I Bring to the Table</SplitText>
         </h1>
       </div>
-      <div className="skills">
+      <div className="container">
         <div className="about">
           {/* Text Section */}
-          
+          <div className="head">
+            <div className="imageContainer">
+              <img src="/backend.webp" alt="" />
+            </div>
+            <h1>
+              <SplitText>Expert Tools Behind Every </SplitText>
+              <strong>
+                <SplitText>Code. Design. Deploy.  All in One Workflow.</SplitText>
+              </strong>
+            </h1>
+            <p>
+              I work with a powerful set of development and design tools to
+              deliver fast, functional, and future-proof web solutions. From
+              coding and debugging to UI/UX design, version control, and 3D
+              modeling — I use the best in class to bring your ideas to life
+              with precision and polish.
+            </p>
+          </div>
         </div>
         <div className="separator" />
         <div className="tech">
-          <h2>Uses</h2>
+          <h2>Tools</h2>
           <div className="techContainer">
             {apps.map((ele, i) => (
               <div className="techBox" key={i}>
