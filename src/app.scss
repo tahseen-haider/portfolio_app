@@ -28,3 +28,26 @@ section {
 section[id="Projects"] {
   height: fit-content;
 }
+
+/* Apply this to the body or any scrollable container */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Dark track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444;  /* Dark gray thumb */
+  border-radius: 6px;
+  border: 3px solid #1e1e1e; /* Matches track for padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666; /* Lighter on hover */
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 12px;
+}

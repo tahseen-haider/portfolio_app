@@ -131,6 +131,7 @@ export default function Services1() {
             </div>
             <h1>
               <SplitText>Perfect SkillSet for Your </SplitText>
+              <br/>
               <strong>
                 <SplitText>Responsive Full-Stack Websites</SplitText>
               </strong>
