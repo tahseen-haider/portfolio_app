@@ -3,6 +3,8 @@ import "./projects.scss";
 // eslint-disable-next-line no-unused-vars
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import SplitText from "../../styles/components/SplitText";
+import { LucideArrowRight } from "lucide-react";
+import ProjectShowcase from "./components/ProjectShowcase";
 
 const items = [
   {
@@ -38,7 +40,37 @@ const Project = () =>
     // const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
     return (
       <section className="eachProject">
-        <div className="container"></div>
+        <div className="container">
+          {/* Desc */}
+          <div className="desc">
+            <div className="heading">
+              <h1 className="title">
+                <SplitText>AI-Powered Medical & Healthcare App</SplitText>
+              </h1>
+              <h2 className="stack">
+                Full Stack (Next.js, JWT, SSE, TypeScript, Prisma)
+              </h2>
+            </div>
+            <ul>
+              <li>
+                <LucideArrowRight size={16} className="icon" /> Integrated
+                LLM-powered chatbot for healthcare Q&A
+              </li>
+              <li>
+                <LucideArrowRight size={16} className="icon" /> Implemented
+                authentication with user roles (admin, user, doctor)
+              </li>
+              <li>
+                <LucideArrowRight size={16} className="icon" /> Enabled secure
+                medical report uploads with streaming responses via SSE
+              </li>
+            </ul>
+          </div>
+          {/* Showcase */}
+          <div className="showcase">
+            <ProjectShowcase/>
+          </div>
+        </div>
       </section>
     );
   };

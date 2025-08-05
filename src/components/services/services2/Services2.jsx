@@ -110,6 +110,7 @@ export default function Services2() {
         <h1>
           <SplitText>What I Bring to the Table</SplitText>
         </h1>
+        <div className="bar" />
       </div>
       <div className="container">
         <div className="about">
@@ -120,9 +121,11 @@ export default function Services2() {
             </div>
             <h1>
               <SplitText>Expert Tools Behind Every </SplitText>
-              <br/>
+              <br />
               <strong>
-                <SplitText>Line of Code. Pixel of Design. Click of Deploy.</SplitText>
+                <SplitText>
+                  Line of Code. Pixel of Design. Click of Deploy.
+                </SplitText>
               </strong>
             </h1>
             <p>

@@ -11,17 +11,19 @@
   margin-right: auto;
 
   .heading {
-
     z-index: 2;
     text-align: center;
     color: orange;
     font-size: 22px;
     width: 100%;
     height: fit-content;
-    border-bottom: 3px solid white;
 
     @include mobile {
       font-size: 18px;
+    }
+    .bar {
+      border-bottom: 3px solid white;
+      margin: 0 20px;
     }
   }
   .container {
@@ -127,15 +129,14 @@
         gap: 10px;
         h1 {
           text-transform: uppercase;
-          font-size: 34px;
-          color: rebeccapurple;
+          color: white;
 
           strong {
-            color: white;
-          }
-
-          @include mobile {
             font-size: 26px;
+            color: rebeccapurple;
+            @include mobile {
+              font-size: 20px;
+            }
           }
         }
 

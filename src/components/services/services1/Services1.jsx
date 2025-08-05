@@ -110,6 +110,7 @@ export default function Services1() {
         <h1>
           <SplitText>What I Bring to the Table</SplitText>
         </h1>
+        <div className="bar"/>
       </div>
       <div className="container">
         <div className="tech">
