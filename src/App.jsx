@@ -1,12 +1,12 @@
 import "./app.scss";
 import Contact from "./components/contact/Contact.jsx";
-import Cursor from "./components/cursor/Cursor.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
-import Portfolio from "./components/portfolio/Portfolio.jsx";
+import Projects from "./components/projects/Projects.jsx";
 import Services1 from "./components/services/services1/Services1.jsx";
 import Services2 from "./components/services/services2/Services2.jsx";
 import ToTopBtn from "./components/toTopBtn/ToTopBtn.jsx";
+import Cursor from "./components/cursor/Cursor.jsx"
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         <Services2 />
       </section>
       <section id="Projects">
-        <Portfolio />
+        <Projects />
       </section>
       <div style={{ height: "40px" }} />
       <section id="Contact">

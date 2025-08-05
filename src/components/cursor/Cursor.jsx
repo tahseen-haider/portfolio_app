@@ -15,6 +15,8 @@ export default function Cursor() {
     };
   }, []);
 
+  console.log(position.x, position.y)
+
   return (
     <div className="cursor">
       <motion.div

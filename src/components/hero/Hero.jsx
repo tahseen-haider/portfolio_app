@@ -129,12 +129,12 @@ export default function Hero() {
           <motion.img
             onClick={() => {
               document
-                .getElementById("Services")
+                .getElementById("Skills")
                 .scrollIntoView({ behavior: "smooth" });
             }}
             variants={textVariants}
             animate="scrollButton"
-            src="/scroll.png"
+            src="/images/hero/scroll.png"
             alt="image"
           />
         </motion.div>
@@ -156,7 +156,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 2 } }}
             className="main-image"
-            src="/heroo.webp"
+            src="/images/hero/hero.webp"
             alt="hero-image"
           />
         </div>

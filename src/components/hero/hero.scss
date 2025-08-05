@@ -102,10 +102,11 @@
       img {
         width: 50px;
         cursor: pointer;
+        z-index: 40;
 
         @include mobile {
           position: absolute;
-          bottom: 0;
+          bottom: -100px;
           right: 0;
         }
       }

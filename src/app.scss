@@ -17,10 +17,13 @@ body {
 
 main {
   width: 100%;
+  max-width: 1600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -31,11 +34,11 @@ a {
 section {
   height: 100vh;
   width: 100%;
-  max-width: 1600px;
   scroll-snap-align: center;
 }
 
 section[id="Projects"] {
+  width: 100%;
   height: fit-content;
 }
 

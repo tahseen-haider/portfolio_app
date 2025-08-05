@@ -116,7 +116,7 @@ export default function Services2() {
           {/* Text Section */}
           <div className="head">
             <div className="imageContainer">
-              <img src="/backend.webp" alt="" />
+              <img src="/images/services/backend.webp" alt="tools-image" />
             </div>
             <h1>
               <SplitText>Expert Tools Behind Every </SplitText>
