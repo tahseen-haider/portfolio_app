@@ -15,6 +15,14 @@ body {
   color: lightgray;
 }
 
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -22,6 +30,8 @@ a {
 
 section {
   height: 100vh;
+  width: 100%;
+  max-width: 1600px;
   scroll-snap-align: center;
 }
 

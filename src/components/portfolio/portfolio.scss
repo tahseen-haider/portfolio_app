@@ -13,13 +13,11 @@
       left: 0;
       text-align: center;
       color: orange;
-      font-size: 36px;
+      font-size: 22px;
       display: flex;
       flex-direction: column;
       justify-content: start;
-      @include laptop {
-        font-size: 22px;
-      }
+
       @include mobile {
         justify-content: end;
         padding-bottom: 60px;
@@ -27,11 +25,8 @@
       }
 
       .progressBar {
-        height: 10px;
+        height: 3px;
         background-color: white;
-        @include laptop {
-          height: 5px;
-        }
       }
     }
   }

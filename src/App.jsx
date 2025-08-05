@@ -10,7 +10,7 @@ import ToTopBtn from "./components/toTopBtn/ToTopBtn.jsx";
 
 function App() {
   return (
-    <div>
+    <main>
       <Cursor />
       <ToTopBtn/>
       <section id="Homepage">
@@ -30,7 +30,7 @@ function App() {
       <section id="Contact">
         <Contact />
       </section>
-    </div>
+    </main>
   );
 }
 
