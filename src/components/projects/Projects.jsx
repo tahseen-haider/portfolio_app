@@ -65,10 +65,20 @@ const Project = () =>
                 medical report uploads with streaming responses via SSE
               </li>
             </ul>
+
+            {/* Link */}
+            <a
+              href="http://ai-medical-healthcare-afxk.vercel.app/"
+              target="_blank"
+              about="live demo link"
+              role="link button"
+            >
+              Live Demo
+            </a>
           </div>
           {/* Showcase */}
           <div className="showcase">
-            <ProjectShowcase/>
+            <ProjectShowcase />
           </div>
         </div>
       </section>
