@@ -120,6 +120,7 @@
           flex-direction: row;
           justify-content: center;
           align-items: center;
+          user-select: none;
 
           .screenWrapper {
             width: 100%;
@@ -129,6 +130,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: row;
+            position: relative;
 
             .laptop-screen {
               position: relative;
@@ -239,21 +241,76 @@
             .phone-screen {
               max-width: 300px;
               max-height: 100%;
-
               .content {
                 top: 3.5%;
                 height: 93%;
                 width: 84%;
+                cursor: ns-resize;
+              }
+            }
+            
+            .laptop-screen {
+              max-width: 800px;
+              
+              .content {
+                cursor: ns-resize;
+                top: 10.5%;
+                height: 77%;
+                width: 71%;
+              }
+            }
+            .phone-screen {
+              .guide {
+                position: absolute;
+                left: -28%;
+                top: 50%;
+                transform: translateY(-50%);
+                color: orange;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                opacity: 70%;
+
+                svg {
+                  height: 36px;
+                  align-self: center;
+                }
+                > :first-child {
+                  rotate: 45deg;
+                }
+                > :last-child {
+                  rotate: -45deg;
+                }
+                p {
+                }
               }
             }
 
             .laptop-screen {
-              max-width: 800px;
-
-              .content {
-                top: 10.5%;
-                height: 77%;
-                width: 71%;
+              // guide
+              .guide {
+                position: absolute;
+                left: 0%;
+                top: 50%;
+                transform: translateY(-50%);
+                color: orange;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                opacity: 70%;
+                svg {
+                  height: 36px;
+                  align-self: center;
+                  justify-self: flex-end;
+                }
+                > :first-child {
+                  rotate: 45deg;
+                }
+                > :last-child {
+                  rotate: -45deg;
+                }
+                p {
+                }
               }
             }
           }
@@ -267,6 +324,18 @@
             position: relative;
             border-radius: 8px;
             transition: all 0.3s ease;
+
+            .guide {
+              position: absolute;
+              top: -100%;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              color: orange;
+              opacity: 0.7;
+            }
           }
 
           .laptop-toggle-button {

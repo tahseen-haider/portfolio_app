@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "../projects.scss";
-import { ArrowBigLeft } from "lucide-react";
+import { ArrowBigDown, ArrowBigDownDash, ArrowBigLeft, ArrowBigUpDash } from "lucide-react";
 export default function ProjectShowcase() {
   const [currentScreen, setCurrentScreen] = useState("laptop");
 
   function DisplayScreen() {
     return (
       <div className="screenWrapper">
+        {/* Screen */}
         <div
           className={
             currentScreen === "laptop" ? "laptop-screen" : "phone-screen"
@@ -25,6 +26,12 @@ export default function ProjectShowcase() {
                 alt="project-screenshot"
               />
             </div>
+          </div>
+          {/* Guide Text */}
+          <div className="guide">
+            <ArrowBigUpDash />
+            <p>Scroll</p>
+            <ArrowBigDownDash />
           </div>
         </div>
       </div>
@@ -53,6 +60,12 @@ export default function ProjectShowcase() {
         {/* Placeholder img */}
         <div className="placeholder">
           <ArrowBigLeft />
+        </div>
+
+        {/* Guide */}
+        <div className="guide">
+          <p>Toggle Device</p>
+          <ArrowBigDown/>
         </div>
       </button>
     );
