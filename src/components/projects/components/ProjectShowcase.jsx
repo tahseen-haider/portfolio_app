@@ -6,19 +6,27 @@ export default function ProjectShowcase() {
 
   function DisplayScreen() {
     return (
-      <div className={`screen ${
-          currentScreen === "laptop"
-            ? "laptop-screen"
-            : "phone-screen"
-        }`}>
-        <img
-          src={
-            currentScreen === "laptop"
-              ? "/images/projects/laptop.png"
-              : "/images/projects/phone.png"
+      <div className="screenWrapper">
+        <div
+          className={
+            currentScreen === "laptop" ? "laptop-screen" : "phone-screen"
           }
-          alt={currentScreen === "laptop" ? "laptop-image" : "phone-image"}
-        />
+        >
+          <div className="screenImage">
+            <div className="screen">
+              <img
+                src={`/images/projects/${currentScreen}.png`}
+                alt={`${currentScreen}-frame`}
+              />
+            </div>
+            <div className="content">
+              <img
+                src={`/images/projects/1/${currentScreen}.webp`}
+                alt="project-screenshot"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
@@ -52,12 +60,10 @@ export default function ProjectShowcase() {
 
   return (
     <div className="container">
-      <div className="screenWrapper">
-        {/* Screen */}
-        <DisplayScreen />
-        {/* Device Toggler */}
-        <DeviceToggler />
-      </div>
+      {/* Screen */}
+      <DisplayScreen />
+      {/* Device Toggler */}
+      <DeviceToggler />
     </div>
   );
 }
