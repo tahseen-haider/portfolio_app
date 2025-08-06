@@ -128,7 +128,7 @@ export default function Services1() {
           {/* Text Section */}
           <div className="head">
             <div className="imageContainer">
-              <img src="/images/services/frontend.webp" alt="tech-image" />
+              <img width={30} height={30} src="/images/services/frontend.webp" alt="tech-image" />
             </div>
             <h1>
               <SplitText>Perfect SkillSet for Your </SplitText>

@@ -127,6 +127,8 @@ export default function Hero() {
             </motion.a>
           </motion.div>
           <motion.img
+          width={100}
+          height={100}
             onClick={() => {
               document
                 .getElementById("Skills")
@@ -153,11 +155,15 @@ export default function Hero() {
         </motion.div>
         <div className="imageContainer">
           <motion.img
+            width={100}
+            height={100}
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 2 } }}
+            animate={{ opacity: 1, transition: { duration: 0.3 } }}
             className="main-image"
             src="/images/hero/hero.webp"
             alt="hero-image"
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
       </div>

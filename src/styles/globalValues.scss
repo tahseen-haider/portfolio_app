@@ -53,4 +53,11 @@ $breakpoint-xl: 1370px;
 
 // Colors
 
-$base-color: #0c0c1d
+$base-color: #0c0c1d;
+
+section h1,
+article h1,
+nav h1,
+aside h1 {
+  font-size: 2rem; /* Or whatever size you want */
+}

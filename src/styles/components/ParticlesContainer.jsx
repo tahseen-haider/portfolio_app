@@ -3,7 +3,7 @@
 import { useCallback, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useState } from "react";
-import { loadFull } from "tsparticles";
+import { loadSlim } from "@tsparticles/slim";
 
 export default function ParticlesContainer() {
   const [init, setInit] = useState(false);
@@ -23,7 +23,7 @@ export default function ParticlesContainer() {
   }, []);
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      await loadFull(engine);
+      await loadSlim(engine);
     }).then(() => {
       setInit(true);
     });

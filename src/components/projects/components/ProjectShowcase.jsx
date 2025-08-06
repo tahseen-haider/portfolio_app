@@ -22,13 +22,13 @@ export default function ProjectShowcase({ laptopImg, phoneImg }) {
         >
           <div className="screenImage">
             <div className="screen">
-              <img
+              <img width={30} height={30}
                 src={`/images/projects/${currentScreen}.png`}
                 alt={`${currentScreen}-frame`}
               />
             </div>
             <div className="content">
-              <img
+              <img width={30} height={30}
                 src={currentScreen === "laptop" ? laptopImg : phoneImg}
                 alt="project-screenshot"
               />
@@ -56,7 +56,7 @@ export default function ProjectShowcase({ laptopImg, phoneImg }) {
           setCurrentScreen(currentScreen === "phone" ? "laptop" : "phone");
         }}
       >
-        <img
+        <img width={30} height={30}
           src={
             currentScreen === "laptop"
               ? "/images/projects/phone.png"

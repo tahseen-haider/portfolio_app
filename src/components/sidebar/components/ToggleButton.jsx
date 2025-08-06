@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 export default function ToggleButton({ setOpen }) {
   return (
     <button
+      aria-label="Open navigation menu"
       onClick={() => {
         setOpen((prev) => !prev);
       }}
@@ -23,8 +24,8 @@ export default function ToggleButton({ setOpen }) {
           stroke="black"
           strokeLinecap="round"
           variants={{
-            open: { d:"M 10 11 L 10 11" },
-            closed: { d:"M 2 11 L 20 11" },
+            open: { d: "M 10 11 L 10 11" },
+            closed: { d: "M 2 11 L 20 11" },
           }}
         />
         <motion.path
