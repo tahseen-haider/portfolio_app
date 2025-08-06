@@ -1,7 +1,14 @@
 import { useState } from "react";
 import "../projects.scss";
-import { ArrowBigDown, ArrowBigDownDash, ArrowBigLeft, ArrowBigUpDash } from "lucide-react";
-export default function ProjectShowcase() {
+import {
+  ArrowBigDown,
+  ArrowBigDownDash,
+  ArrowBigLeft,
+  ArrowBigUpDash,
+} from "lucide-react";
+
+
+export default function ProjectShowcase({ laptopImg, phoneImg }) {
   const [currentScreen, setCurrentScreen] = useState("laptop");
 
   function DisplayScreen() {
@@ -22,7 +29,7 @@ export default function ProjectShowcase() {
             </div>
             <div className="content">
               <img
-                src={`/images/projects/1/${currentScreen}.webp`}
+                src={currentScreen === "laptop" ? laptopImg : phoneImg}
                 alt="project-screenshot"
               />
             </div>
@@ -65,7 +72,7 @@ export default function ProjectShowcase() {
         {/* Guide */}
         <div className="guide">
           <p>Toggle Device</p>
-          <ArrowBigDown/>
+          <ArrowBigDown />
         </div>
       </button>
     );
