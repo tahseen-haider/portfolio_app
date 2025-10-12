@@ -136,7 +136,7 @@ export default function Hero() {
             }}
             variants={textVariants}
             animate="scrollButton"
-            src="/images/hero/scroll.png"
+            src="/images/hero/scroll.webp"
             alt="image"
           />
         </motion.div>

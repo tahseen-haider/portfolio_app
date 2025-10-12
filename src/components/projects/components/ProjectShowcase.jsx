@@ -23,7 +23,7 @@ export default function ProjectShowcase({ laptopImg, phoneImg }) {
           <div className="screenImage">
             <div className="screen">
               <img width={30} height={30}
-                src={`/images/projects/${currentScreen}.png`}
+                src={`/images/projects/${currentScreen}.webp`}
                 alt={`${currentScreen}-frame`}
               />
             </div>
@@ -60,7 +60,7 @@ export default function ProjectShowcase({ laptopImg, phoneImg }) {
           src={
             currentScreen === "laptop"
               ? "/images/projects/phone.webp"
-              : "/images/projects/laptop.png"
+              : "/images/projects/laptop.webp"
           }
           alt={currentScreen === "laptop" ? "phone-image" : "laptop-image"}
         />

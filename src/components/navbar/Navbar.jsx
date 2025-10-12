@@ -29,16 +29,31 @@ export default function Navbar() {
           </div>
           <div className="social">
             <a href="https://github.com/tahseen-haider" target="_blank">
-              <img width={30} height={30} src="/images/navbar/github.jpg" alt="github-link" />
+              <img
+                width={30}
+                height={30}
+                src="/images/navbar/github.webp"
+                alt="github-link"
+              />
             </a>
             <a
               href="https://www.facebook.com/people/Tahseen-Haider/pfbid06dGfVscMm12bERh5ojavyAqUj398hzmYSeSEorkSnApiBxy5Va3FGim5H1VbFzsAl/"
               target="_blank"
             >
-              <img width={30} height={30} src="/images/navbar/facebook.png" alt="facebook-link" />
+              <img
+                width={30}
+                height={30}
+                src="/images/navbar/facebook.webp"
+                alt="facebook-link"
+              />
             </a>
             <a href="https://www.instagram.com/tahseen021/" target="_blank">
-              <img width={30} height={30} src="/images/navbar/instagram.png" alt="instagram-link" />
+              <img
+                width={30}
+                height={30}
+                src="/images/navbar/instagram.webp"
+                alt="instagram-link"
+              />
             </a>
           </div>
         </div>
