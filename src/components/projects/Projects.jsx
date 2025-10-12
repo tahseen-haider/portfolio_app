@@ -1,10 +1,11 @@
 import { useRef } from "react";
-import "./projects.scss";
 // eslint-disable-next-line no-unused-vars
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import SplitText from "../../styles/components/SplitText";
 import { LucideArrowRight } from "lucide-react";
 import ProjectShowcase from "./components/ProjectShowcase";
+
+import "./projects.scss";
 
 const items = [
   {
@@ -14,9 +15,9 @@ const items = [
     laptopImg: "/images/projects/1/laptop.webp",
     stack: "Full Stack (Next.js, JWT, SSE, TypeScript, Prisma)",
     details: [
-      "Integrated LLM-powered chatbot for healthcare Q&A",
-      "Implemented authentication with user roles (admin, user, doctor)",
-      "Enabled secure medical report uploads with streaming responses via SSE",
+      "LLM-powered healthcare chatbot with real-time streaming via SSE",
+      "Role-based access control for Admin, Doctor, and User roles",
+      "Interactive dashboards for administrative and medical management",
     ],
     link: "http://ai-medical-healthcare-afxk.vercel.app/",
   },
@@ -27,8 +28,9 @@ const items = [
     laptopImg: "/images/projects/2/laptop.jpg",
     stack: "Frontend Only (React.js, JavaScript, Tailwind)",
     details: [
-      "Developed a responsive burger ordering UI using React and Bootstrap",
-      "Designed for a smooth UX with interactive menus and mobile support",
+      "Responsive React-based burger ordering UI with Bootstrap styling",
+      "Custom auth system with Google OAuth and role-based authorization",
+      "Centralized state management using Redux for scalable data flow",
     ],
     link: "https://grill-and-blaze-burgers.vercel.app/",
   },
@@ -48,12 +50,6 @@ const items = [
 ];
 
 const Project = ({ item }) => {
-  // const ref = useRef();
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  // });
-
-  // const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
   return (
     <section className="eachProject">
       <div className="container">

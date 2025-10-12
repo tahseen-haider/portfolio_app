@@ -59,7 +59,7 @@ export default function ProjectShowcase({ laptopImg, phoneImg }) {
         <img width={30} height={30}
           src={
             currentScreen === "laptop"
-              ? "/images/projects/phone.png"
+              ? "/images/projects/phone.webp"
               : "/images/projects/laptop.png"
           }
           alt={currentScreen === "laptop" ? "phone-image" : "laptop-image"}

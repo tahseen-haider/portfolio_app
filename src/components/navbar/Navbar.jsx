@@ -21,7 +21,7 @@ export default function Navbar() {
             <a
               className="cv-download"
               download
-              href="/docs/Tahseen_Haider_Web_Development_CV.pdf"
+              href="/docs/Tahseen_Haider_Web_Dev_CV.pdf"
             >
               <Download size={18} />
               <span>Download CV</span>

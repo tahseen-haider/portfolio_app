@@ -100,7 +100,6 @@
               left: -20px;
             }
           }
-
         }
         a {
           padding: 10px 20px;
@@ -153,7 +152,6 @@
           .screenWrapper {
             width: 100%;
             height: 100%;
-            // padding: 20px 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -167,7 +165,6 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              // max-height: 400px;
 
               @include mobile {
                 max-height: 200px;
@@ -198,6 +195,7 @@
                   width: 71%;
                   height: 80%;
                   overflow-y: scroll;
+                  overscroll-behavior: contain;
                   z-index: 1;
 
                   &::-webkit-scrollbar {
@@ -251,6 +249,7 @@
                   width: 90%;
                   height: 96%;
                   overflow-y: scroll;
+                  overscroll-behavior: contain;
                   z-index: 1;
 
                   &::-webkit-scrollbar {
