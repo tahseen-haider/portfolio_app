@@ -37,17 +37,20 @@ export default function Navbar() {
               />
             </a>
             <a
-              href="https://www.facebook.com/people/Tahseen-Haider/pfbid06dGfVscMm12bERh5ojavyAqUj398hzmYSeSEorkSnApiBxy5Va3FGim5H1VbFzsAl/"
+              href="https://pk.linkedin.com/in/tahsin-haider-3815721b4"
               target="_blank"
             >
               <img
                 width={30}
                 height={30}
-                src="/images/navbar/facebook.webp"
-                alt="facebook-link"
+                src="/icons/linkedin.svg"
+                alt="linkedin-link"
               />
             </a>
-            <a href="https://www.instagram.com/tahseen021/" target="_blank">
+            <a
+              href="https://www.instagram.com/tahseen_hey_der/"
+              target="_blank"
+            >
               <img
                 width={30}
                 height={30}

@@ -54,7 +54,7 @@
           font-weight: 500;
           border-radius: 8px;
           transition: background-color 0.3s ease;
-          
+
           &:hover {
             background-color: white;
             color: black;
@@ -71,6 +71,7 @@
           display: flex;
           border-radius: 6px;
           overflow: hidden;
+          background-color: white;
           svg {
             width: 28px;
             height: 28px;
